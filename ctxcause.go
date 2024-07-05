@@ -9,7 +9,7 @@ import (
 	"golang.org/x/tools/go/ast/inspector"
 )
 
-const doc = "ctxcause reports the use of context.WithCancel, context.WithDeadline, and context.WithTimeout"
+const doc = "ctxcause reports the use of context.WithCancel, context.WithTimeout, and context.WithDeadline instead of context.WithCancelCause, context.WithTimeoutCause, and context.WithDeadlineCause."
 
 // Analyzer is the struct that reports the use of context.WithCancel, context.WithDeadline, and context.WithTimeout
 var Analyzer = &analysis.Analyzer{
